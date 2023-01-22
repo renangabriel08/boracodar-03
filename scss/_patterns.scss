@@ -1,0 +1,112 @@
+h2 {
+    width: 94px;
+    height: 48px;
+    color: #FFF;
+    font-family: 'roboto';
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 213px;
+    height: 48px;
+
+    border-radius: 24px;
+    border: none;
+
+    text-transform: uppercase;
+    font-family: 'Inter';
+    color: #FFF;
+
+    transition: 400ms;
+}
+.botao-primario {
+    button {   
+        background: #8257E5;
+    }
+    .hover {
+        background: #9674E5;
+    }
+}
+.botao-secundario{
+    button {
+        background: #3C3748;
+    }
+    .hover {
+        background: #6A617F;
+    }
+}
+.botao-terciario{
+    button {
+        background: transparent;
+    }
+}
+
+.default:hover {
+    background: #996DFF;
+}
+.hover:hover {
+    background: #996DFF;
+    cursor: pointer;
+}
+.focus {
+    border: 2px solid #D9CDF7;
+    &:hover {
+        background: #996DFF;
+    }
+}
+.disabled {
+    transition: 900ms;
+    opacity: 0.6;
+    &:hover {
+    cursor: not-allowed;
+    background: #996DFF;
+    }
+}
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: wait;
+}
+.movable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    &:hover {
+        cursor: move;
+        background: #996DFF;
+    }
+}
+
+img {
+    background: transparent;
+
+    width: 1.6rem;
+    height: 1.6rem;
+}
+#barra-laranja1,
+#barra-laranja2,
+#barra-laranja3 {
+    width: 1.8rem;
+    height: 1rem;
+    display: none;
+}
+
+#barra-branca1,
+#barra-branca2,
+#barra-branca3 {
+    width: 1.8rem;
+    height: 1rem;
+}
+
+#spinner1,
+#spinner2,
+#spinner3 {
+    display: none;
+}

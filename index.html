@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <title>Bora Codar 03</title>
+</head>
+<body>
+
+    <section class="tudo">
+
+        <header>
+            <div class="cor"></div>
+            <div class="textos">
+                <h2 class="primeiro-texto">BOTÃO PRIMÁRIO</h2>
+                <h2>BOTÃO SECUNDÁRIO</h2>
+                <h2>BOTÃO TERCIÁRIO</h2>
+            </div>
+        </header>
+    
+        <div class="container">
+    
+            <div class="tipos-botoes">
+                <h2>DEFAULT</h2>
+                <h2>HOVER</h2>
+                <h2>FOCUS</h2>
+                <h2>DISABLED</h2>
+                <h2>LOADING</h2>
+                <h2>MOVABLE</h2>
+            </div>
+        
+            <div class="botoes">
+        
+                <div class="botao-primario">
+                    <button class="default">DEFAULT primary</button>
+                    <button class="hover">hover primary</button>
+                    <button class="focus">focus primary</button>
+                    <button class="disabled">disabled primary</button>
+                    <button class="loading" onpointerover="carregar1()" onpointerleave="pararCarregar1()">
+                        <img id="carregando1" src="./assets/carregando.png" alt="">
+                        <img id="spinner1" src="./assets/spinner.gif" alt="">
+                        loading primary
+                    </button>
+                    <button class="movable" onpointerover="colocaCor1()" onpointerleave="tiraCor1()">
+                        <img id="barra-laranja1" src="./assets/barras-laranja.png" alt="">
+                        <img id="barra-branca1" src="./assets/barras.png" alt="">
+                        movable secondary
+                    </button>
+                </div>
+        
+                <div class="botao-secundario">
+                    <button class="default">DEFAULT secondary</button>
+                    <button class="hover">hover secondary</button>
+                    <button class="focus">focus secondary</button>
+                    <button class="disabled">disabled secondary</button>
+                    <button class="loading" onpointerover="carregar2()" onpointerleave="pararCarregar2()">
+                        <img id="carregando2" src="./assets/carregando.png" alt="">
+                        <img id="spinner2" src="./assets/spinner.gif" alt="">
+                        loading secondary
+                    </button>
+                    <button class="movable" onpointerover="colocaCor2()" onpointerleave="tiraCor2()">
+                        <img id="barra-laranja2" src="./assets/barras-laranja.png" alt="">
+                        <img id="barra-branca2" src="./assets/barras.png" alt="">
+                        movable secondary
+                    </button>
+                </div>
+        
+                <div class="botao-terciario">
+                    <button class="default">DEFAULT tertiary</button>
+                    <button class="hover">hover tertiary</button>
+                    <button class="focus">focus tertiary</button>
+                    <button class="disabled">disabled tertiary</button>
+                    <button class="loading" onpointerover="carregar3()" onpointerleave="pararCarregar3()">
+                        <img id="carregando3" src="./assets/carregando.png" alt="">
+                        <img id="spinner3" src="./assets/spinner.gif" alt="">
+                        loading tertiary
+                    </button>
+                    <button class="movable" onpointerover="colocaCor3()" onpointerleave="tiraCor3()">
+                        <img id="barra-laranja3" src="./assets/barras-laranja.png" alt="">
+                        <img id="barra-branca3" src="./assets/barras.png" alt="">
+                        movable tertiary
+                    </button>
+                </div>
+        
+            </div>
+            
+        </div>
+
+    </section>
+
+</body>
+<script src="./js/main.js"></script>
+</html>
